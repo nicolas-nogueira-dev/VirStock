@@ -4,3 +4,4 @@ stock/*
 !stock/.gitkeep
 .env
 .users
+userFactory.py
