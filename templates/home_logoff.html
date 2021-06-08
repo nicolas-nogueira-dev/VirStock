@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+<form class="form display-flex flex-flow-col align-items justify-content" action="{{ url_for('login') }}" method="post">
+  <h2 class="display-flex align-items justify-content menu-text">Login</h2>
+    <label class="form-label margin" for="name">Enter your name</label>
+    <input class="margin input-text" type="text" name="name" autocomplete="off" maxlength="15" required />
+    <label class="form-label margin" for="password">Enter your password</label>
+    <input class="margin input-text" type="password" name="password" value="" required />
+  <input class="input-submit" type="submit" value="Login" />
+</form>
+{% endblock %}

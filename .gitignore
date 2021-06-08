@@ -1,0 +1,6 @@
+logs/*
+!logs/ .gitkeep
+stock/*
+!stock/ .gitkeep
+.env
+.users

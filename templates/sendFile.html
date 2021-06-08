@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block main %}
+<form class="form display-flex flex-flow-col align-items justify-content" action="{{ url_for('uploadFile') }}" method="POST" enctype="multipart/form-data">
+  <h2 class="display-flex align-items justify-content menu-text">Send file</h2>
+  <input class="margin input-text" type="file" name="file" required />
+  <input class="input-submit" type="submit" value="Send" />
+</form>
+{% endblock %}
